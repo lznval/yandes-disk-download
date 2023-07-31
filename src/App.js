@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import YandexDiskUploader from "./YandexDiskUploader";
 
+// const token = 'тут указать свой токен для использования Яндекс API';
+// const folder = 'тут указывается название папки в Яндекс Диске';
+
+const token = 'y0_AgAAAAAWmtXFAADLWwAAAADpE1G2rk28QusFQXWKNy-_Arb2A-mGTq0';
+const folder = 'Музыка';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <YandexDiskUploader token={token} folder={folder} />
     </div>
   );
 }
